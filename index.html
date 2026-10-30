@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CalendarWidget</title>
+  <meta name="description" content="Windows 바탕화면과 Android 홈 화면에서 쓰는 개인용 캘린더·할 일 위젯">
+  <style>
+    :root {
+      --bg: #f6f7f9; --card: #ffffff; --text: #1c1c1e; --muted: #5f6368; --accent: #2f6fe0; --line: #e3e5e8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #121214; --card: #1c1c1e; --text: #f2f2f2; --muted: #a0a4aa; --accent: #6aa0ff; --line: #2c2c30; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif; line-height: 1.7;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 2rem; margin: 0 0 4px; }
+    .tag { color: var(--muted); margin: 0 0 32px; }
+    section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+    h2 { font-size: 1.1rem; margin: 0 0 8px; }
+    ul { margin: 0; padding-left: 1.2em; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: .9rem; margin-top: 32px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>CalendarWidget</h1>
+  <p class="tag">Windows 바탕화면과 Android 홈 화면에서 쓰는 개인용 캘린더 · 할 일 위젯</p>
+
+  <section>
+    <h2>무엇을 하나요</h2>
+    <ul>
+      <li>Windows: 화면 오른쪽에 숨어 있다가 누르면 열리는 바탕화면 달력 위젯</li>
+      <li>Android: 앱과 홈 화면 위젯 (달력, 일정, 할 일)</li>
+      <li>Google 캘린더 일정 보기 · 만들기 · 수정 · 삭제 (반복 일정, 음력 반복 포함)</li>
+      <li>Microsoft To Do 할 일 보기 · 추가 · 완료 · 수정 · 삭제</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>계정 연결</h2>
+    <p>Google 캘린더와 Microsoft To Do는 사용자가 직접 로그인해 연결합니다.
+       앱은 사용자의 기기에서 Google·Microsoft 서버와 직접 통신하며, 별도의 서버를 운영하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>개인정보</h2>
+    <p>데이터를 어떻게 다루는지는 <a href="privacy.html">개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+  </section>
+
+  <footer>문의: <a href="mailto:imhwajnn@gmail.com">imhwajnn@gmail.com</a></footer>
+</main>
+</body>
+</html>
